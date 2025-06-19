@@ -92,12 +92,6 @@ You can find them inside the [`submission/`](./submission) folder.
 
 ---
 
-## Example Architecture Diagram *(Optional)*
-
-> Insert a visual here if you’d like to show the dual-stage retrieval pipeline
-
----
-
 ## Team Members
 
 - **Md Naim Hassan Saykat** – Task 2: Transformer-based reranking, training, evaluation 
