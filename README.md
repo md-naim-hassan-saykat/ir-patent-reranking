@@ -16,9 +16,9 @@ We tackled **Task 2** of the patent matching challenge with a focus on maximizin
 
 ## Project Files
  
-[`Task2_Patent_Reranking.ipynb`](./notebooks/Task2_Patent_Reranking.ipynb) – Re-ranking using transformer-based cross-encoder  
+[`task2_patent_reranking.ipynb`](./notebooks/Task2_Patent_Reranking.ipynb) – Re-ranking using transformer-based cross-encoder  
 [`create_embeddings.py`](./src/create_embeddings.py) – Script for embedding generation  
-[`IR_Final_Presentation.pdf`](./ir_final_presentation.pdf) – Final project slides  
+[`ir_final_presentation.pdf`](./ir_final_presentation.pdf) – Final project slides  
 [`submission/`](./submission) – Codabench submission files (`predictions1.json`, `predictions2.json`)
 
 ---
