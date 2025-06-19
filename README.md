@@ -24,30 +24,44 @@ We tackled **Task 2** of the patent matching challenge with a focus on maximizin
 
 ---
 
+## Dataset
+
+The dataset was provided as part of the Codabench Patent Matching Challenge. It includes:
+
+- **Queries**: Based on claims and TAC (Title-Abstract-Claims)
+- **Documents**: Scientific publication fields like titles, abstracts, claims, and descriptions
+- **Pre-ranking**: Each query is associated with 20 pre-ranked candidate documents
+
+> Due to size and license constraints, the full JSON files (`Citation_JSONs/`, `Content_JSONs/`) are not included.  
+To reproduce results, download them from the official challenge and place in a local `datasets/` folder.
+
+---
+
 ## Methods & Models
 
-### Dense Retriever
-- Dual-encoder setup using BGE, MPNet, and GTR models
-- Embeddings generated using HuggingFace models
-- FAISS for similarity search
+### Task 1: Dense Retriever
+- Models used: `all-MiniLM-L6-v2`, `PatentSBERTa`
+- Embedding comparison via FAISS cosine similarity
+- Used Reciprocal Rank Fusion (RRF) to combine multiple retrievers
 
-### Cross-Encoder Re-ranker
-- Models tested:
-  - `BAAI/bge-reranker-large`
-  - `cross-encoder/ms-marco-MiniLM-L-6-v2`
-- Trained using contrastive loss on query-positive-negative triplets
-- Evaluation: `Recall@k`, `MAP@100`, `Mean Rank`
+### Task 2: Cross-Encoder Reranker
+- Models: `infly/inf-retriever-v1-1.5`, `BAAI/bge-reranker-large`
+- Fine-tuned with binary relevance on top candidates
+- Loss: Binary cross-entropy; Optimizer: AdamW
 
 ---
 
 ## Evaluation Results
 
-| Model | Recall@100 | MAP@100 | Mean Rank |
-|-------|------------|---------|------------|
-| BGE Dense Retriever | 0.873 | 0.697 | 26.4 |
-| Cross-Encoder (BGE-Reranker) | **0.905** | **0.741** | **18.7** |
-
-> Ensemble reranking improved ranking performance by 2.3% over the baseline model.
+| Metric       | Score   |
+|--------------|---------|
+| Recall@3     | 0.1283  |
+| Recall@5     | 0.2413  |
+| Recall@10    | 0.5321  |
+| Recall@20    | 0.8627  |
+| MAP@100      | 0.2681  |
+| MRR          | 0.3878  |
+| Mean Rank    | 4.90    |
 
 ---
 
@@ -59,6 +73,12 @@ We tackled **Task 2** of the patent matching challenge with a focus on maximizin
 - PyTorch
 - Scikit-learn, Pandas, NumPy
 - Codabench Evaluation Platform
+
+---
+
+## Final Presentation
+
+📄 [IR_Final_Presentation.pdf](./ir_final_presentation.pdf)
 
 ---
 
@@ -81,8 +101,9 @@ You can find them inside the [`submission/`](./submission) folder.
 
 ## Team Members
 
-- **Md Naim Hassan Saykat** – Dense retrieval, reranking pipeline, evaluation, presentation  
-- *(add more if applicable)*
+- **Md Naim Hassan Saykat** – Task 2: Transformer-based reranking, training, evaluation 
+- **Dang Hoang Khang Nguyen** – Task 1: TF-IDF, BM25, Dense retrieval, RRF  
+- **Ahmed Nazar** – Contributed to the design, structuring, and visual formatting of the final project presentation  
 
 ---
 
