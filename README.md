@@ -15,8 +15,7 @@ We tackled **Task 2** of the patent matching challenge with a focus on maximizin
 ---
 
 ## Project Files
-
-[`dense_retrieval_2_0.ipynb`](./notebooks/dense_retrieval_2_0.ipynb) – Dense retriever for initial candidate retrieval  
+ 
 [`Task2_Patent_Reranking.ipynb`](./notebooks/Task2_Patent_Reranking.ipynb) – Re-ranking using transformer-based cross-encoder  
 [`create_embeddings.py`](./src/create_embeddings.py) – Script for embedding generation  
 [`IR_Final_Presentation.pdf`](./ir_final_presentation.pdf) – Final project slides  
