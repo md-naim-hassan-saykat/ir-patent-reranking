@@ -77,7 +77,7 @@ To reproduce results, download them from the official challenge and place in a l
 
 ## Final Presentation
 
-📄 [ir_final_presentation.pdf](./ir_final_presentation.pdf)
+[ir_final_presentation.pdf](./ir_final_presentation.pdf)
 
 ---
 
