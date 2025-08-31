@@ -79,4 +79,4 @@ python src/metrics.py --input results/predictions_bge_claims.json
 [LinkedIn](https://www.linkedin.com/in/md-naim-hassan-saykat/)  
 [GitHub](https://github.com/md-naim-hassan-saykat)  
 [Academic Email](mailto:md-naim-hassan.saykat@universite-paris-saclay.fr)  
-[Personal Email](mailto:mdnaimhassansaykat@gmail.com)
+[Personal Email](mailto:mdnaimhassansaykat@gmail.com) 
