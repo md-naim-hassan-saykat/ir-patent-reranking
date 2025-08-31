@@ -14,7 +14,7 @@ Evaluation is performed using standard IR metrics such as Mean Average Precision
 	•	Reciprocal Rank Fusion (RRF) combining dense retriever + cross-encoder.
 	•	Evaluation Metrics: MAP, Recall@k, Mean Rank.
 ## Repository Structure
-patent-reranking/
+ir-patent-reranking/
 ├── notebooks/
 │   └── patent_reranking.ipynb         # Main notebook (end-to-end pipeline)
 │
@@ -57,3 +57,26 @@ python src/evaluate_train_rankings.py --method dense
 python src/cross_encode_ranking_train.py --epochs 3 --batch_size 16
   	•	Evaluate metrics
 python src/metrics.py --input results/predictions_bge_claims.json
+## Results  
+
+| Model                     | MAP   | Recall@10 | Mean Rank |
+|----------------------------|-------|-----------|-----------|
+| TF–IDF Baseline            | 0.xx  | 0.xx      | xxx       |
+| Dense Retriever (BGE)      | 0.xx  | 0.xx      | xxx       |
+| Cross-Encoder Re-ranker    | 0.xx  | 0.xx      | xxx       |
+| Ensemble (Dense + CE, RRF) | 0.xx  | 0.xx      | xxx       |
+
+## References
+	•	Lin et al., Dense Passage Retrieval for Open-Domain Question Answering, ACL 2020.
+	•	Nogueira & Cho, Passage Re-ranking with BERT, arXiv 2019.
+	•	Hugging Face Transformers: https://huggingface.co/docs/transformers.
+
+ ## Author
+
+ **Md Naim Hassan Saykat**  
+*MSc in Artificial Intelligence, Université Paris-Saclay*  
+
+[LinkedIn](https://www.linkedin.com/in/md-naim-hassan-saykat/)  
+[GitHub](https://github.com/md-naim-hassan-saykat)  
+[Academic Email](mailto:md-naim-hassan.saykat@universite-paris-saclay.fr)  
+[Personal Email](mailto:mdnaimhassansaykat@gmail.com)
