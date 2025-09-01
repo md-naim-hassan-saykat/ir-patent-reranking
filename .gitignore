@@ -1,75 +1,31 @@
-# --- Python ---
+# Python
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 *.so
-*.egg
-*.egg-info/
-dist/
-build/
 
-# --- Jupyter ---
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# --- Virtual environments ---
-.env
-.venv
-env/
+# Virtual environments
+.venv/
 venv/
-ENV/
-*.idea/
-*.vscode/
+env/
+*.egg-info/
 
-# --- OS files ---
-.DS_Store
-Thumbs.db
+# Jupyter Notebook
+.ipynb_checkpoints/
 
-# --- Logs & Outputs ---
+# Logs & temp files
 *.log
-*.out
-*.err
+*.tmp
+*.swp
 
-# --- Data files (keep only small samples in repo) ---
-*.csv
-*.tsv
-*.json
-*.jsonl
-*.parquet
+# Large data files (keep in Google Drive, not GitHub)
+data/*.json
 *.zip
-*.gz
-*.tar
-*.pkl
-*.npy
-*.npz
-*.h5
-*.pt
-*.bin
 
-# --- Model files ---
-*.ckpt
-*.pth
-*.pt
-*.bin
-*.onnx
+# OS files
+.DS_Store
 
-# --- Results ---
-results/
-predictions*.json
-metrics_result.txt
-evaluation_metrics.txt
-*.txt
-
-# --- Reports (auto-generated) ---
-*.aux
-*.bbl
-*.blg
-*.log
-*.out
-*.pdf
-*.toc
-*.lof
-*.lot
-
-# --- Other ---
-.idea/
-.vscode/
+# Results (can regenerate)
+results/*.json
+results/*.txt
