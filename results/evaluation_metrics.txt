@@ -1,0 +1,23 @@
+
+Model: infly/inf-retriever-v1-1.5b
+Text Type: claims
+Max Length: 768
+Batch Size: 8
+
+Pre-ranking performance:
+Recall@3: 0.1108
+Recall@5: 0.2083
+Recall@10: 0.4046
+Recall@20: 0.6565
+MAP: 0.2140
+Mean Inverse Rank: 0.2984
+Mean Rank: 7.20
+
+Re-ranking performance:
+Recall@3: 0.1838
+Recall@5: 0.2588
+Recall@10: 0.4426
+Recall@20: 0.7657
+MAP: 0.2424
+Mean Inverse Rank: 0.3293
+Mean Rank: 6.35

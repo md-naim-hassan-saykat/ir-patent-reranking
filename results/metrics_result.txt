@@ -1,0 +1,8 @@
+
+Recall@3: 0.1283
+Recall@5: 0.2413
+Recall@10: 0.5321
+Recall@20: 0.8627
+MAP: 0.2681
+Mean Inverse Rank: 0.3878
+Mean Rank: 4.90
