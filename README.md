@@ -3,16 +3,36 @@ This project implements a patent reranking pipeline using a combination of dense
 The pipeline improves initial retrieval results from TF–IDF and dense embeddings (BGE) with a transformer-based cross-encoder that re-scores query–document pairs.
 
 Evaluation is performed using standard IR metrics such as Mean Average Precision (MAP), Recall@k, and Mean Rank.
+
+---
+
+## Dataset
+The dataset used in this project is stored on Google Drive due to file size limitations on GitHub.  
+You can download it from the following link:
+
+🔗 [ir-patent-reranking-data (Google Drive)](https://drive.google.com/drive/folders/1Oy4Gp1KVO__O1JnX1V4JuZ0zy7jlK78J?usp=sharing)
+
+Contents:
+- `documents_features.json` (~65 MB) – patent document features
+- `train_queries.json` – training queries
+- `test_queries.json` – test queries
+- `train_gold_mapping.json` – gold mapping for evaluation
+
+---
+
 ## Overview
-	•	Dataset: Provided JSONs (train_queries.json, test_queries.json, documents_features.json, train_gold_mapping.json).
-	•	Retrievers:
-	•	TF–IDF (baseline)
-	•	Dense retriever (BGE embeddings)
-	•	Re-ranker:
-	•	Cross-Encoder (BERT-based pairwise model)
-	•	Ensemble:
-	•	Reciprocal Rank Fusion (RRF) combining dense retriever + cross-encoder.
-	•	Evaluation Metrics: MAP, Recall@k, Mean Rank.
+- **Dataset:** Provided JSONs (train_queries.json, test_queries.json, documents_features.json, train_gold_mapping.json).
+- **Retrievers:**
+  - TF–IDF (baseline)
+  - Dense retriever (BGE embeddings)
+- **Re-ranker:**
+  - Cross-Encoder (BERT-based pairwise model)
+- **Ensemble:**
+  - Reciprocal Rank Fusion (RRF) combining dense retriever + cross-encoder.
+- **Evaluation Metrics:** MAP, Recall@k, Mean Rank.
+
+---
+
 ## Repository Structure
 ir-patent-reranking/
 ├── notebooks/
@@ -45,11 +65,17 @@ ir-patent-reranking/
 ├── LICENSE
 └── .gitignore
 # Getting Started
+
+---
+
 ## Clone the repository
 git clone https://github.com/md-naim-hassan-saykat/patent-reranking.git
 cd patent-reranking
 ## Install dependencies
 pip install -r requirements.txt
+
+---
+
 ## Run experiments
 	•	Dense retrieval baseline
 python src/evaluate_train_rankings.py --method dense
@@ -57,6 +83,9 @@ python src/evaluate_train_rankings.py --method dense
 python src/cross_encode_ranking_train.py --epochs 3 --batch_size 16
   	•	Evaluate metrics
 python src/metrics.py --input results/predictions_bge_claims.json
+
+---
+
 ## Results  
 
 | Model                     | MAP   | Recall@10 | Mean Rank |
@@ -66,10 +95,14 @@ python src/metrics.py --input results/predictions_bge_claims.json
 | Cross-Encoder Re-ranker    | 0.xx  | 0.xx      | xxx       |
 | Ensemble (Dense + CE, RRF) | 0.xx  | 0.xx      | xxx       |
 
+---
+
 ## References
 	•	Lin et al., Dense Passage Retrieval for Open-Domain Question Answering, ACL 2020.
 	•	Nogueira & Cho, Passage Re-ranking with BERT, arXiv 2019.
 	•	Hugging Face Transformers: https://huggingface.co/docs/transformers.
+
+---
 
  ## Author
 
