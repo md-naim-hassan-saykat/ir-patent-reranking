@@ -96,12 +96,11 @@ python src/metrics.py --input results/predictions_bge_claims.json
 
 ## Results  
 
-| Model                     | MAP   | Recall@10 | Mean Rank |
-|----------------------------|-------|-----------|-----------|
-| TF–IDF Baseline            | 0.xx  | 0.xx      | xxx       |
-| Dense Retriever (BGE)      | 0.xx  | 0.xx      | xxx       |
-| Cross-Encoder Re-ranker    | 0.xx  | 0.xx      | xxx       |
-| Ensemble (Dense + CE, RRF) | 0.xx  | 0.xx      | xxx       |
+| Model                                   | MAP   | Recall@10 | Mean Rank |
+|-----------------------------------------|-------|-----------|-----------|
+| Dense Retriever (infly/inf-retriever-v1-1.5b) | 0.2140 | 0.4046    | 7.20      |
+| Cross-Encoder Re-ranker                 | 0.2424 | 0.4426    | 6.35      |
+| Ensemble (Dense + Cross-Encoder, RRF)   | 0.2681 | 0.5321    | 4.90      |
 
 ---
 
