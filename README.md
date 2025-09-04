@@ -77,7 +77,7 @@ ir-patent-reranking/
 ---
 
 ## Clone the repository
-git clone https://github.com/md-naim-hassan-saykat/patent-reranking.git
+git clone https://github.com/md-naim-hassan-saykat/ir-patent-reranking.git
 cd patent-reranking
 ## Install dependencies
 pip install -r requirements.txt
