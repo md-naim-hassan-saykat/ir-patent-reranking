@@ -15,16 +15,19 @@ Evaluation is performed using standard IR metrics such as Mean Average Precision
 ---
 
 ## Dataset
-The dataset used in this project is stored on Google Drive due to file size limitations on GitHub.  
-You can download it from the following link:
+Due to file size limitations, the dataset is stored on Google Drive.  
+Download it from the following link:
 
 🔗 [ir-patent-reranking-data (Google Drive)](https://drive.google.com/drive/folders/1Oy4Gp1KVO__O1JnX1V4JuZ0zy7jlK78J?usp=sharing)
 
-Contents:
-- `documents_features.json` (~65 MB) – patent document features
-- `train_queries.json` – training queries
-- `test_queries.json` – test queries
-- `train_gold_mapping.json` – gold mapping for evaluation
+After downloading, place all files into the `data/` folder:
+
+ir-patent-reranking/
+├── data/
+│   ├── train_queries.json
+│   ├── test_queries.json
+│   ├── train_gold_mapping.json
+│   └── documents_features.json
 
 ---
 
@@ -78,7 +81,7 @@ ir-patent-reranking/
 
 ## Clone the repository
 git clone https://github.com/md-naim-hassan-saykat/ir-patent-reranking.git
-cd patent-reranking
+cd ir-patent-reranking
 ## Install dependencies
 pip install -r requirements.txt
 
