@@ -12,7 +12,7 @@ The pipeline improves initial retrieval results from TF–IDF and dense embeddin
 
 Evaluation is performed using standard IR metrics such as Mean Average Precision (MAP), Recall@k, and Mean Rank.
 
----v
+---
 
 ## Dataset
 Due to file size limitations, the dataset is stored on Google Drive.  
