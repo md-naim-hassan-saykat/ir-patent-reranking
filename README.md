@@ -12,7 +12,7 @@ The pipeline improves initial retrieval results from TF–IDF and dense embeddin
 
 Evaluation is performed using standard IR metrics such as Mean Average Precision (MAP), Recall@k, and Mean Rank.
 
----
+---v
 
 ## Dataset
 Due to file size limitations, the dataset is stored on Google Drive.  
@@ -25,8 +25,8 @@ After downloading, place all files into the `data/` folder:
 ir-patent-reranking/
 ├── data/
 │   ├── train_queries.json
-│   ├── test_queries.json
 │   ├── train_gold_mapping.json
+│   ├── test_queries.json
 │   └── documents_features.json
 
 ---
