@@ -30,8 +30,8 @@ ir-patent-reranking/
 │   └── documents_features.json
 
 > **Note:**  
-> The dataset used in this project was provided as part of a university course for educational and research purposes.  
-> It is referenced here to ensure reproducibility of the experiments and is not redistributed within this repository.
+> The dataset used in this project was provided in the context of a university course for educational and research purposes.  
+> It is referenced here solely to ensure reproducibility of the experiments and is not redistributed within this repository.
 
 ---
 
