@@ -38,7 +38,7 @@ ir-patent-reranking/
 ## Overview
 - **Dataset:** Provided JSONs (train_queries.json, test_queries.json, documents_features.json, train_gold_mapping.json).
 - **Retrievers:**
-  - TF–IDF (baseline)
+  - TF-IDF (baseline)
   - Dense retriever (BGE embeddings)
 - **Re-ranker:**
   - Cross-Encoder (BERT-based pairwise model)
