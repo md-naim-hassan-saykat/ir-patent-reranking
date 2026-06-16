@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 This project implements a patent reranking pipeline using a combination of dense retrieval and cross-encoder reranking models.
-The pipeline improves initial retrieval results from TF–IDF and dense embeddings (BGE) with a transformer-based cross-encoder that re-scores query-document pairs.
+The pipeline improves initial retrieval results from TF-IDF and dense embeddings (BGE) with a transformer-based cross-encoder that re-scores query-document pairs.
 
 Evaluation is performed using standard IR metrics such as Mean Average Precision (MAP), Recall@k, and Mean Rank.
 
@@ -92,11 +92,11 @@ pip install -r requirements.txt
 ---
 
 ## Run experiments
-	.	Dense retrieval baseline
+- Dense retrieval baseline
 python src/evaluate_train_rankings.py --method dense
- 	.	Cross-encoder re-ranking
+- Cross-encoder re-ranking
 python src/cross_encode_ranking_train.py --epochs 3 --batch_size 16
-  	.	Evaluate metrics
+- Evaluate metrics
 python src/metrics.py --input results/predictions_bge_claims.json
 
 ---
@@ -112,9 +112,9 @@ python src/metrics.py --input results/predictions_bge_claims.json
 ---
 
 ## References
-	.	Lin et al., Dense Passage Retrieval for Open-Domain Question Answering, ACL 2020.
-	.	Nogueira & Cho, Passage Re-ranking with BERT, arXiv 2019.
-	.	Hugging Face Transformers: https://huggingface.co/docs/transformers.
+- Lin et al., Dense Passage Retrieval for Open-Domain Question Answering, ACL 2020.
+- Nogueira & Cho, Passage Re-ranking with BERT, arXiv 2019.
+- Hugging Face Transformers: https://huggingface.co/docs/transformers.
 
 ---
 
